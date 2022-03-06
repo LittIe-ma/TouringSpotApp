@@ -92,6 +92,11 @@
                     <constraint firstAttribute="trailing" secondItem="ghc-As-1hi" secondAttribute="trailing" constant="10" id="kMi-s7-gPI"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="dlN-ca-EHd" id="fcg-GP-h0y"/>
+                <outlet property="nameLabel" destination="5HP-lh-1jq" id="6mp-pl-7Nc"/>
+                <outlet property="spotImage" destination="azB-wA-yoC" id="FO4-Ye-M62"/>
+            </connections>
             <point key="canvasLocation" x="180.43478260869566" y="30.133928571428569"/>
         </tableViewCell>
     </objects>
