@@ -14,6 +14,8 @@ final class TouringSpotListViewController: UIViewController {
         return vc
     }
 
+    @IBOutlet private weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
