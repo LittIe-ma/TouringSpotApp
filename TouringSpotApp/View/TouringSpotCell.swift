@@ -15,9 +15,9 @@ final class TouringSpotCell: UITableViewCell {
     @IBOutlet private weak var addressLabel: UILabel!
     @IBOutlet private weak var spotImage: UIImageView!
 
-    func configure(touringSpotData: TouringSpotData) {
-        self.nameLabel.text = touringSpotData.name
-        self.addressLabel.text = touringSpotData.address
-        self.spotImage.image = touringSpotData.image
+    func configure(touringSpotModel: TouringSpotModel) {
+        self.nameLabel.text = touringSpotModel.name
+        self.addressLabel.text = touringSpotModel.address
+        self.spotImage.image = touringSpotModel.image
     }
 }

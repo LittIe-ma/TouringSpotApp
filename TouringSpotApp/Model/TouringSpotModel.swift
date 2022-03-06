@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct TouringSpotData {
+struct TouringSpotModel {
     let name: String
     let address: String
     let image: UIImage
