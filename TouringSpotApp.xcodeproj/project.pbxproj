@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F3C82C1B27D492BA00A3B64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C1A27D492BA00A3B64C /* AppDelegate.swift */; };
-		F3C82C1F27D492BA00A3B64C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C1E27D492BA00A3B64C /* ViewController.swift */; };
-		F3C82C2227D492BA00A3B64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C2027D492BA00A3B64C /* Main.storyboard */; };
+		F3C82C1F27D492BA00A3B64C /* TouringSpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C1E27D492BA00A3B64C /* TouringSpotListViewController.swift */; };
+		F3C82C2227D492BA00A3B64C /* TouringSpotList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C2027D492BA00A3B64C /* TouringSpotList.storyboard */; };
 		F3C82C2427D492BB00A3B64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C2327D492BB00A3B64C /* Assets.xcassets */; };
 		F3C82C2727D492BB00A3B64C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C2527D492BB00A3B64C /* LaunchScreen.storyboard */; };
+		F3C82C2F27D4969C00A3B64C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C2E27D4969C00A3B64C /* Router.swift */; };
+		F3C82C3127D4973600A3B64C /* UIStoryboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C3027D4973600A3B64C /* UIStoryboard+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3C82C1727D492BA00A3B64C /* TouringSpotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouringSpotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C82C1A27D492BA00A3B64C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3C82C1E27D492BA00A3B64C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3C82C2127D492BA00A3B64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3C82C1E27D492BA00A3B64C /* TouringSpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouringSpotListViewController.swift; sourceTree = "<group>"; };
+		F3C82C2127D492BA00A3B64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TouringSpotList.storyboard; sourceTree = "<group>"; };
 		F3C82C2327D492BB00A3B64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3C82C2627D492BB00A3B64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3C82C2827D492BB00A3B64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3C82C2E27D4969C00A3B64C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F3C82C3027D4973600A3B64C /* UIStoryboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		F3C82C1927D492BA00A3B64C /* TouringSpotApp */ = {
 			isa = PBXGroup;
 			children = (
+				F3C82C3427D498A900A3B64C /* Extension */,
+				F3C82C3327D4989F00A3B64C /* Router */,
+				F3C82C3227D4988500A3B64C /* Controller */,
 				F3C82C1A27D492BA00A3B64C /* AppDelegate.swift */,
-				F3C82C1E27D492BA00A3B64C /* ViewController.swift */,
-				F3C82C2027D492BA00A3B64C /* Main.storyboard */,
 				F3C82C2327D492BB00A3B64C /* Assets.xcassets */,
 				F3C82C2527D492BB00A3B64C /* LaunchScreen.storyboard */,
 				F3C82C2827D492BB00A3B64C /* Info.plist */,
 			);
 			path = TouringSpotApp;
+			sourceTree = "<group>";
+		};
+		F3C82C3227D4988500A3B64C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3C82C1E27D492BA00A3B64C /* TouringSpotListViewController.swift */,
+				F3C82C2027D492BA00A3B64C /* TouringSpotList.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3C82C3327D4989F00A3B64C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3C82C2E27D4969C00A3B64C /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3C82C3427D498A900A3B64C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F3C82C3027D4973600A3B64C /* UIStoryboard+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +154,7 @@
 			files = (
 				F3C82C2727D492BB00A3B64C /* LaunchScreen.storyboard in Resources */,
 				F3C82C2427D492BB00A3B64C /* Assets.xcassets in Resources */,
-				F3C82C2227D492BA00A3B64C /* Main.storyboard in Resources */,
+				F3C82C2227D492BA00A3B64C /* TouringSpotList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C82C1F27D492BA00A3B64C /* ViewController.swift in Sources */,
+				F3C82C3127D4973600A3B64C /* UIStoryboard+.swift in Sources */,
+				F3C82C1F27D492BA00A3B64C /* TouringSpotListViewController.swift in Sources */,
+				F3C82C2F27D4969C00A3B64C /* Router.swift in Sources */,
 				F3C82C1B27D492BA00A3B64C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,12 +175,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3C82C2027D492BA00A3B64C /* Main.storyboard */ = {
+		F3C82C2027D492BA00A3B64C /* TouringSpotList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F3C82C2127D492BA00A3B64C /* Base */,
 			);
-			name = Main.storyboard;
+			name = TouringSpotList.storyboard;
 			sourceTree = "<group>";
 		};
 		F3C82C2527D492BB00A3B64C /* LaunchScreen.storyboard */ = {
@@ -290,7 +322,6 @@
 				INFOPLIST_FILE = TouringSpotApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +349,6 @@
 				INFOPLIST_FILE = TouringSpotApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
