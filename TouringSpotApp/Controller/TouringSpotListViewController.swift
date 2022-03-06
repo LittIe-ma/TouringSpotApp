@@ -14,12 +14,25 @@ final class TouringSpotListViewController: UIViewController {
         return vc
     }
 
-    @IBOutlet private weak var tableView: UITableView!
-    
+    @IBOutlet private weak var tableView: UITableView! {
+        didSet {
+            tableView.register(UINib(nibName: TouringSpotCell.className, bundle: nil), forCellReuseIdentifier: TouringSpotCell.className)
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
 }
 
+extension TouringSpotListViewController: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        5
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TouringSpotCell.className) as! TouringSpotCell
+        return cell
+    }
+}
