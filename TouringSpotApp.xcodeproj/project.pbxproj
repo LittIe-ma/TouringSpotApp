@@ -16,6 +16,7 @@
 		F3C82C3127D4973600A3B64C /* UIStoryboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C3027D4973600A3B64C /* UIStoryboard+.swift */; };
 		F3C82C3827D49F2500A3B64C /* TouringSpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C3627D49F2500A3B64C /* TouringSpotCell.swift */; };
 		F3C82C3927D49F2500A3B64C /* TouringSpotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C3727D49F2500A3B64C /* TouringSpotCell.xib */; };
+		F3C82C3C27D4EE9200A3B64C /* TouringSpotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C3B27D4EE9200A3B64C /* TouringSpotData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F3C82C3027D4973600A3B64C /* UIStoryboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+.swift"; sourceTree = "<group>"; };
 		F3C82C3627D49F2500A3B64C /* TouringSpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouringSpotCell.swift; sourceTree = "<group>"; };
 		F3C82C3727D49F2500A3B64C /* TouringSpotCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouringSpotCell.xib; sourceTree = "<group>"; };
+		F3C82C3B27D4EE9200A3B64C /* TouringSpotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouringSpotData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,11 @@
 		F3C82C1927D492BA00A3B64C /* TouringSpotApp */ = {
 			isa = PBXGroup;
 			children = (
+				F3C82C3A27D4EE7300A3B64C /* Model */,
+				F3C82C3227D4988500A3B64C /* Controller */,
 				F3C82C3527D49F0500A3B64C /* View */,
 				F3C82C3427D498A900A3B64C /* Extension */,
 				F3C82C3327D4989F00A3B64C /* Router */,
-				F3C82C3227D4988500A3B64C /* Controller */,
 				F3C82C1A27D492BA00A3B64C /* AppDelegate.swift */,
 				F3C82C2327D492BB00A3B64C /* Assets.xcassets */,
 				F3C82C2527D492BB00A3B64C /* LaunchScreen.storyboard */,
@@ -106,6 +109,14 @@
 				F3C82C3727D49F2500A3B64C /* TouringSpotCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F3C82C3A27D4EE7300A3B64C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3C82C3B27D4EE9200A3B64C /* TouringSpotData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			files = (
 				F3C82C3827D49F2500A3B64C /* TouringSpotCell.swift in Sources */,
 				F3C82C3127D4973600A3B64C /* UIStoryboard+.swift in Sources */,
+				F3C82C3C27D4EE9200A3B64C /* TouringSpotData.swift in Sources */,
 				F3C82C1F27D492BA00A3B64C /* TouringSpotListViewController.swift in Sources */,
 				F3C82C2F27D4969C00A3B64C /* Router.swift in Sources */,
 				F3C82C1B27D492BA00A3B64C /* AppDelegate.swift in Sources */,
