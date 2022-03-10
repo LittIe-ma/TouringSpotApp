@@ -22,19 +22,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-Hp-AHv">
                                 <rect key="frame" x="5" y="5" width="349" height="90"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="azB-wA-yoC">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="azB-wA-yoC">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="90"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="byl-vK-l4f"/>
                                             <constraint firstAttribute="height" priority="750" constant="100" id="t4D-am-0WG"/>
-                                            <constraint firstAttribute="width" secondItem="azB-wA-yoC" secondAttribute="height" multiplier="1:1" id="wFC-Zu-YR9"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="G88-VZ-Lhh">
-                                        <rect key="frame" x="95" y="0.0" width="254" height="90"/>
+                                        <rect key="frame" x="105" y="0.0" width="244" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HP-lh-1jq">
-                                                <rect key="frame" x="0.0" y="0.0" width="254" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="244" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="SnQ-Bo-kiZ"/>
                                                 </constraints>
@@ -43,7 +42,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlN-ca-EHd">
-                                                <rect key="frame" x="0.0" y="30" width="254" height="60"/>
+                                                <rect key="frame" x="0.0" y="30" width="244" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -106,9 +105,6 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

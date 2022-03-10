@@ -18,6 +18,6 @@ final class TouringSpotCell: UITableViewCell {
     func configure(touringSpotModel: TouringSpotModel) {
         self.nameLabel.text = touringSpotModel.name
         self.addressLabel.text = touringSpotModel.address
-//        self.spotImage.image = touringSpotModel.image
+        self.spotImage.image = UIImage(named: touringSpotModel.imageStr)
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 struct TouringSpotModel {
     let name: String
     let address: String
-//    let imageStr: String
+    let imageStr: String
 }
 
 final class loadCSV {
@@ -35,7 +35,7 @@ final class loadCSV {
 
         for data in csvLines {
             let detail = data.components(separatedBy: ",")
-            completion?(.success(TouringSpotModel(name: detail[0], address: detail[1])))
+            completion?(.success(TouringSpotModel(name: detail[0], address: detail[1], imageStr: detail[2])))
         }
     }
 }
