@@ -20,19 +20,32 @@ final class TouringSpotListViewController: UIViewController {
         }
     }
 
+    private var touringSpotModel: [TouringSpotModel] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        loadCSV.shared.get { result in
+            switch result {
+            case .failure(let error):
+                print(error.localizedDescription)
+            case .success(let model):
+                self.touringSpotModel.append(model)
+            }
+        }
     }
 }
 
 extension TouringSpotListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        touringSpotModel.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TouringSpotCell.className) as! TouringSpotCell
+        let touringSpotModel = touringSpotModel[indexPath.row]
+        cell.configure(touringSpotModel: touringSpotModel)
         return cell
     }
 }
