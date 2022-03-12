@@ -11,6 +11,8 @@ struct TouringSpotModel {
     let name: String
     let address: String
     let imageStr: String
+    let latitude: Double
+    let longitude: Double
 }
 
 final class loadCSV {
@@ -35,7 +37,7 @@ final class loadCSV {
 
         for data in csvLines {
             let detail = data.components(separatedBy: ",")
-            completion?(.success(TouringSpotModel(name: detail[0], address: detail[1], imageStr: detail[2])))
+            completion?(.success(TouringSpotModel(name: detail[0], address: detail[1], imageStr: detail[2], latitude: Double(detail[3])!, longitude: Double(detail[4])!)))
         }
     }
 }
