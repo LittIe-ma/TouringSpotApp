@@ -18,6 +18,8 @@
 		F3C82C3927D49F2500A3B64C /* TouringSpotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C3727D49F2500A3B64C /* TouringSpotCell.xib */; };
 		F3C82C3C27D4EE9200A3B64C /* TouringSpotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C3B27D4EE9200A3B64C /* TouringSpotModel.swift */; };
 		F3C82C3E27D4F04100A3B64C /* TouringSpotData.csv in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C3D27D4F04100A3B64C /* TouringSpotData.csv */; };
+		F3C82C5227DA28FD00A3B64C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C5127DA28FD00A3B64C /* MapViewController.swift */; };
+		F3C82C5427DA290A00A3B64C /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C5327DA290A00A3B64C /* Map.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F3C82C3727D49F2500A3B64C /* TouringSpotCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouringSpotCell.xib; sourceTree = "<group>"; };
 		F3C82C3B27D4EE9200A3B64C /* TouringSpotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouringSpotModel.swift; sourceTree = "<group>"; };
 		F3C82C3D27D4F04100A3B64C /* TouringSpotData.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = TouringSpotData.csv; sourceTree = "<group>"; };
+		F3C82C5127DA28FD00A3B64C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F3C82C5327DA290A00A3B64C /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			children = (
 				F3C82C1E27D492BA00A3B64C /* TouringSpotListViewController.swift */,
 				F3C82C2027D492BA00A3B64C /* TouringSpotList.storyboard */,
+				F3C82C5127DA28FD00A3B64C /* MapViewController.swift */,
+				F3C82C5327DA290A00A3B64C /* Map.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				F3C82C3927D49F2500A3B64C /* TouringSpotCell.xib in Resources */,
 				F3C82C3E27D4F04100A3B64C /* TouringSpotData.csv in Resources */,
 				F3C82C2227D492BA00A3B64C /* TouringSpotList.storyboard in Resources */,
+				F3C82C5427DA290A00A3B64C /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +216,7 @@
 				F3C82C1F27D492BA00A3B64C /* TouringSpotListViewController.swift in Sources */,
 				F3C82C2F27D4969C00A3B64C /* Router.swift in Sources */,
 				F3C82C1B27D492BA00A3B64C /* AppDelegate.swift in Sources */,
+				F3C82C5227DA28FD00A3B64C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
