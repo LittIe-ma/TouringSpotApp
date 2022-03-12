@@ -39,3 +39,11 @@ final class loadCSV {
         }
     }
 }
+
+extension loadCSV {
+    func showAlert(vc: UIViewController) {
+        let ac = UIAlertController(title: nil, message: "データの読み込みに失敗しました。", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        vc.present(ac, animated: true, completion: nil)
+    }
+}

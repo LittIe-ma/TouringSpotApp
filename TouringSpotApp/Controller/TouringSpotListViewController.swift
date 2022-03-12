@@ -27,8 +27,8 @@ final class TouringSpotListViewController: UIViewController {
 
         loadCSV.shared.get { result in
             switch result {
-            case .failure(let error):
-                print(error.localizedDescription)
+            case .failure(_):
+                loadCSV.shared.showAlert(vc: self)
             case .success(let model):
                 self.touringSpotModel.append(model)
             }
