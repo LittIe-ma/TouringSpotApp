@@ -19,12 +19,15 @@ final class MapViewController: UIViewController {
     @IBOutlet private weak var mapView: MKMapView!
 
     private var locationManager: CLLocationManager!
-
     private var touringSpotModel: [TouringSpotModel] = []
     private var annotations: [MKAnnotation] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        locationManager = CLLocationManager()
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
 
         loadCSV.shared.get { result in
             switch result {
@@ -42,8 +45,24 @@ final class MapViewController: UIViewController {
         for coordinate in touringSpotModel {
             let annotation = MKPointAnnotation()
             annotation.coordinate = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude)
+            annotation.title = coordinate.name
             annotations.append(annotation)
         }
         mapView.addAnnotations(annotations)
+    }
+}
+
+extension MapViewController: CLLocationManagerDelegate {
+
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        let status = manager.authorizationStatus
+        switch status {
+        case .authorizedAlways, .authorizedWhenInUse:
+            manager.startUpdatingLocation()
+        case .notDetermined, .denied, .restricted:
+            manager.requestWhenInUseAuthorization()
+        default:
+            break
+        }
     }
 }
