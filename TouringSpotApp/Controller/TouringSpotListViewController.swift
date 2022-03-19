@@ -45,6 +45,7 @@ extension TouringSpotListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TouringSpotCell.className) as! TouringSpotCell
         let touringSpotModel = touringSpotModel[indexPath.row]
+        cell.selectionStyle = .none
         cell.configure(touringSpotModel: touringSpotModel)
         return cell
     }
