@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F300553227E61A7C004D47E2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300553127E61A7C004D47E2 /* MainTabBarController.swift */; };
 		F3C82C1B27D492BA00A3B64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C1A27D492BA00A3B64C /* AppDelegate.swift */; };
 		F3C82C1F27D492BA00A3B64C /* TouringSpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C1E27D492BA00A3B64C /* TouringSpotListViewController.swift */; };
 		F3C82C2227D492BA00A3B64C /* TouringSpotList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C2027D492BA00A3B64C /* TouringSpotList.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F300553127E61A7C004D47E2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F3C82C1727D492BA00A3B64C /* TouringSpotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouringSpotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C82C1A27D492BA00A3B64C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3C82C1E27D492BA00A3B64C /* TouringSpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouringSpotListViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				F3C82C2027D492BA00A3B64C /* TouringSpotList.storyboard */,
 				F3C82C5127DA28FD00A3B64C /* MapViewController.swift */,
 				F3C82C5327DA290A00A3B64C /* Map.storyboard */,
+				F300553127E61A7C004D47E2 /* MainTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				F3C82C3827D49F2500A3B64C /* TouringSpotCell.swift in Sources */,
 				F3C82C3127D4973600A3B64C /* UIStoryboard+.swift in Sources */,
+				F300553227E61A7C004D47E2 /* MainTabBarController.swift in Sources */,
 				F3C82C3C27D4EE9200A3B64C /* TouringSpotModel.swift in Sources */,
 				F3C82C1F27D492BA00A3B64C /* TouringSpotListViewController.swift in Sources */,
 				F3C82C2F27D4969C00A3B64C /* Router.swift in Sources */,

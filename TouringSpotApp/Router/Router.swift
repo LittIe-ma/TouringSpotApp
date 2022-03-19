@@ -15,9 +15,9 @@ final class Router {
     private var window: UIWindow?
 
     func showRoot(window: UIWindow?) {
-        let vc = TouringSpotListViewController.makeFromStoryboard()
-        let nav = UINavigationController(rootViewController: vc)
-        window?.rootViewController = nav
+
+        let root = MainTabBarController()
+        window?.rootViewController = root
         window?.makeKeyAndVisible()
         self.window = window
     }
