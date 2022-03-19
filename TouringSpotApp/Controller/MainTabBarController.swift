@@ -15,11 +15,11 @@ final class MainTabBarController: UITabBarController {
         var viewControllers = [UIViewController]()
 
         let touringSpotListVC = TouringSpotListViewController.makeFromStoryboard()
-        touringSpotListVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+        touringSpotListVC.tabBarItem = UITabBarItem(title: "リスト", image: UIImage(systemName: "star"), tag: 0)
         viewControllers.append(touringSpotListVC)
 
         let mapVC = MapViewController.makeFromStoryboard()
-        mapVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+        mapVC.tabBarItem = UITabBarItem(title: "地図", image: UIImage(systemName: "map"), tag: 1)
         viewControllers.append(mapVC)
 
         viewControllers = viewControllers.map{ UINavigationController(rootViewController: $0)}
