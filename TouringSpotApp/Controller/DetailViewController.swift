@@ -7,10 +7,9 @@
 
 import UIKit
 
-final class ModalViewController: UIViewController {
+final class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
     }
 }

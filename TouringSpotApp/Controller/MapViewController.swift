@@ -62,7 +62,7 @@ final class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        
+        fpc.show()
     }
 }
 
@@ -85,9 +85,10 @@ private extension MapViewController {
 
     func setupModalView() {
         fpc.delegate = self
-        let modalVC = ModalViewController()
-        fpc.set(contentViewController: modalVC)
+        let detailVC = DetailViewController()
+        fpc.set(contentViewController: detailVC)
         fpc.addPanel(toParent: self)
+        fpc.hide()
     }
 }
 
