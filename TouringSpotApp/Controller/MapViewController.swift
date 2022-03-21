@@ -8,6 +8,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import FloatingPanel
 
 final class MapViewController: UIViewController {
 
@@ -21,6 +22,8 @@ final class MapViewController: UIViewController {
     private var locationManager: CLLocationManager!
     private var touringSpotModel: [TouringSpotModel] = []
     private var annotations: [MKAnnotation] = []
+
+    var fpc = FloatingPanelController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +44,8 @@ final class MapViewController: UIViewController {
         }
 
         putPin()
+
+        setupModalView()
     }
 
     private func putPin() {
@@ -51,6 +56,13 @@ final class MapViewController: UIViewController {
             annotations.append(annotation)
         }
         mapView.addAnnotations(annotations)
+    }
+}
+
+extension MapViewController: MKMapViewDelegate {
+
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        
     }
 }
 
@@ -66,5 +78,22 @@ extension MapViewController: CLLocationManagerDelegate {
         default:
             break
         }
+    }
+}
+
+private extension MapViewController {
+
+    func setupModalView() {
+        fpc.delegate = self
+        let modalVC = ModalViewController()
+        fpc.set(contentViewController: modalVC)
+        fpc.addPanel(toParent: self)
+    }
+}
+
+extension MapViewController: FloatingPanelControllerDelegate {
+
+    func floatingPanel(_ fpc: FloatingPanelController, layoutFor newCollection: UITraitCollection) -> FloatingPanelLayout {
+        return CustomFloatingPanelLayout()
     }
 }

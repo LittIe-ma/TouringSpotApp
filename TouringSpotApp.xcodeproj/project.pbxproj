@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EA4B57BCF23DF5492F182407 /* Pods_TouringSpotApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79CF558346CE88A5A8E8186 /* Pods_TouringSpotApp.framework */; };
 		F300553227E61A7C004D47E2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300553127E61A7C004D47E2 /* MainTabBarController.swift */; };
+		F300553D27E8A6A4004D47E2 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300553B27E8A6A4004D47E2 /* ModalViewController.swift */; };
+		F300553E27E8A6A4004D47E2 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F300553C27E8A6A4004D47E2 /* ModalViewController.xib */; };
+		F300554027E8A7C2004D47E2 /* CustomFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300553F27E8A7C2004D47E2 /* CustomFloatingPanelLayout.swift */; };
 		F3C82C1B27D492BA00A3B64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C1A27D492BA00A3B64C /* AppDelegate.swift */; };
 		F3C82C1F27D492BA00A3B64C /* TouringSpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C82C1E27D492BA00A3B64C /* TouringSpotListViewController.swift */; };
 		F3C82C2227D492BA00A3B64C /* TouringSpotList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C82C2027D492BA00A3B64C /* TouringSpotList.storyboard */; };
@@ -29,6 +32,9 @@
 		48FF5C7183198FB60CF47BD1 /* Pods-TouringSpotApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouringSpotApp.release.xcconfig"; path = "Target Support Files/Pods-TouringSpotApp/Pods-TouringSpotApp.release.xcconfig"; sourceTree = "<group>"; };
 		E79CF558346CE88A5A8E8186 /* Pods_TouringSpotApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouringSpotApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F300553127E61A7C004D47E2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		F300553B27E8A6A4004D47E2 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		F300553C27E8A6A4004D47E2 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		F300553F27E8A7C2004D47E2 /* CustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
 		F3C82C1727D492BA00A3B64C /* TouringSpotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouringSpotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C82C1A27D492BA00A3B64C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3C82C1E27D492BA00A3B64C /* TouringSpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouringSpotListViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +70,6 @@
 				37BF9DB1B3C8E26F022B34E7 /* Pods-TouringSpotApp.debug.xcconfig */,
 				48FF5C7183198FB60CF47BD1 /* Pods-TouringSpotApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +123,9 @@
 				F3C82C5127DA28FD00A3B64C /* MapViewController.swift */,
 				F3C82C5327DA290A00A3B64C /* Map.storyboard */,
 				F300553127E61A7C004D47E2 /* MainTabBarController.swift */,
+				F300553B27E8A6A4004D47E2 /* ModalViewController.swift */,
+				F300553C27E8A6A4004D47E2 /* ModalViewController.xib */,
+				F300553F27E8A7C2004D47E2 /* CustomFloatingPanelLayout.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C82C2727D492BB00A3B64C /* LaunchScreen.storyboard in Resources */,
+				F300553E27E8A6A4004D47E2 /* ModalViewController.xib in Resources */,
 				F3C82C2427D492BB00A3B64C /* Assets.xcassets in Resources */,
 				F3C82C3927D49F2500A3B64C /* TouringSpotCell.xib in Resources */,
 				F3C82C3E27D4F04100A3B64C /* TouringSpotData.csv in Resources */,
@@ -283,12 +292,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C82C3827D49F2500A3B64C /* TouringSpotCell.swift in Sources */,
+				F300554027E8A7C2004D47E2 /* CustomFloatingPanelLayout.swift in Sources */,
 				F3C82C3127D4973600A3B64C /* UIStoryboard+.swift in Sources */,
 				F300553227E61A7C004D47E2 /* MainTabBarController.swift in Sources */,
 				F3C82C3C27D4EE9200A3B64C /* TouringSpotModel.swift in Sources */,
 				F3C82C1F27D492BA00A3B64C /* TouringSpotListViewController.swift in Sources */,
 				F3C82C2F27D4969C00A3B64C /* Router.swift in Sources */,
 				F3C82C1B27D492BA00A3B64C /* AppDelegate.swift in Sources */,
+				F300553D27E8A6A4004D47E2 /* ModalViewController.swift in Sources */,
 				F3C82C5227DA28FD00A3B64C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
