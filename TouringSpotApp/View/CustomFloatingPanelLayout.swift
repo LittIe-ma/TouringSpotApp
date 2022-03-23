@@ -12,16 +12,16 @@ final class CustomFloatingPanelLayout: FloatingPanelLayout {
 
     var position: FloatingPanelPosition = .bottom
 
-    var initialState: FloatingPanelState = .half
+    var initialState: FloatingPanelState = .tip
 
-    var anchors: [FloatingPanelState : FloatingPanelLayoutAnchoring] {
+    var anchors: [FloatingPanelState: FloatingPanelLayoutAnchoring] {
         return [
-            .half: FloatingPanelLayoutAnchor(absoluteInset: 250.0, edge: .bottom, referenceGuide: .safeArea),
+            .tip: FloatingPanelLayoutAnchor(absoluteInset: 120.0, edge: .bottom, referenceGuide: .safeArea),
             .hidden: FloatingPanelLayoutAnchor(absoluteInset: 0.0, edge: .bottom, referenceGuide: .safeArea)
         ]
     }
 
     var supportedPositions: Set<FloatingPanelState> {
-        return [.half, .hidden]
+        return [.tip, .hidden]
     }
 }
