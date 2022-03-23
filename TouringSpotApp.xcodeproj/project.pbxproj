@@ -123,9 +123,6 @@
 				F3C82C5127DA28FD00A3B64C /* MapViewController.swift */,
 				F3C82C5327DA290A00A3B64C /* Map.storyboard */,
 				F300553127E61A7C004D47E2 /* MainTabBarController.swift */,
-				F300553B27E8A6A4004D47E2 /* DetailViewController.swift */,
-				F300553C27E8A6A4004D47E2 /* DetailViewController.xib */,
-				F300553F27E8A7C2004D47E2 /* CustomFloatingPanelLayout.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +148,9 @@
 			children = (
 				F3C82C3627D49F2500A3B64C /* TouringSpotCell.swift */,
 				F3C82C3727D49F2500A3B64C /* TouringSpotCell.xib */,
+				F300553B27E8A6A4004D47E2 /* DetailViewController.swift */,
+				F300553C27E8A6A4004D47E2 /* DetailViewController.xib */,
+				F300553F27E8A7C2004D47E2 /* CustomFloatingPanelLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
