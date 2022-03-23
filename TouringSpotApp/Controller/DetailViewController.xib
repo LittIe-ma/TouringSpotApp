@@ -68,6 +68,11 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="150" id="oC2-yT-Ce0"/>
                             </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMf-7C-hIq" userLabel="Spacer">
                             <rect key="frame" x="0.0" y="220" width="361" height="21"/>
