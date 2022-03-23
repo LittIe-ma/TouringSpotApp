@@ -27,7 +27,8 @@ final class TouringSpotListViewController: UIViewController {
 
         navigationItem.title = "ツーリングスポット"
 
-        loadCSV.shared.get { result in
+        loadCSV.shared.get { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case .failure(_):
                 loadCSV.shared.showAlert(vc: self)
