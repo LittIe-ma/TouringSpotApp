@@ -7,8 +7,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalViewController" customModule="TouringSpotApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="TouringSpotApp" customModuleProvider="target">
             <connections>
+                <outlet property="addressLabel" destination="Vk1-8Y-b1B" id="oaT-rX-9dG"/>
+                <outlet property="imageView" destination="Whu-Zo-Rg5" id="95B-c0-pi9"/>
+                <outlet property="nameLabel" destination="XkZ-c9-bQn" id="ZVp-7A-6f3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
