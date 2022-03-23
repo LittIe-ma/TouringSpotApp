@@ -28,7 +28,7 @@ final class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "マップ"
+        navigationItem.title = "マップ"
 
         locationManager = CLLocationManager()
         locationManager.requestWhenInUseAuthorization()

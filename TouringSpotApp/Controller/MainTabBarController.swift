@@ -19,7 +19,7 @@ final class MainTabBarController: UITabBarController {
         viewControllers.append(touringSpotListVC)
 
         let mapVC = MapViewController.makeFromStoryboard()
-        mapVC.tabBarItem = UITabBarItem(title: "地図", image: UIImage(systemName: "map"), tag: 1)
+        mapVC.tabBarItem = UITabBarItem(title: "マップ", image: UIImage(systemName: "map"), tag: 1)
         viewControllers.append(mapVC)
 
         viewControllers = viewControllers.map{ UINavigationController(rootViewController: $0)}

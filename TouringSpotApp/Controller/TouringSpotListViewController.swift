@@ -25,7 +25,7 @@ final class TouringSpotListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "ツーリングスポット"
+        navigationItem.title = "ツーリングスポット"
 
         loadCSV.shared.get { result in
             switch result {
