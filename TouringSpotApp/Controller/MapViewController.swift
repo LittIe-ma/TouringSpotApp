@@ -46,7 +46,7 @@ final class MapViewController: UIViewController {
 
         putPin()
 
-        setupModalView()
+        setupDetailView()
     }
 
     private func putPin() {
@@ -84,7 +84,7 @@ extension MapViewController: CLLocationManagerDelegate {
 
 private extension MapViewController {
 
-    func setupModalView() {
+    func setupDetailView() {
         fpc.delegate = self
         let detailVC = DetailViewController()
         fpc.set(contentViewController: detailVC)
