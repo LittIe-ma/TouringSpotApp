@@ -45,8 +45,6 @@ final class MapViewController: UIViewController {
         }
 
         putPin()
-
-        setupDetailView()
     }
 
     private func putPin() {
@@ -54,6 +52,7 @@ final class MapViewController: UIViewController {
             let annotation = MKPointAnnotation()
             annotation.coordinate = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude)
             annotation.title = coordinate.name
+            annotation.subtitle = coordinate.imageStr
             annotations.append(annotation)
         }
         mapView.addAnnotations(annotations)
@@ -63,7 +62,10 @@ final class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        fpc.show()
+        guard let annotation = view.annotation else { return }
+        guard let name = annotation.title as? String else { return }
+        guard let imageStr = annotation.subtitle as? String else { return }
+        showDetailView(name: name, imageStr: imageStr)
     }
 }
 
@@ -84,12 +86,14 @@ extension MapViewController: CLLocationManagerDelegate {
 
 private extension MapViewController {
 
-    func setupDetailView() {
+    func showDetailView(name: String, imageStr: String) {
         fpc.delegate = self
         let detailVC = DetailViewController()
+        detailVC.name = name
+        detailVC.imageStr = imageStr
         fpc.set(contentViewController: detailVC)
         fpc.addPanel(toParent: self)
-        fpc.hide()
+        fpc.move(to: .half, animated: true, completion: nil)
     }
 }
 
